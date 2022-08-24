@@ -1,0 +1,104 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: IMC 1.0\n"
+"POT-Creation-Date: 2022-08-08 09:03-0300\n"
+"PO-Revision-Date: 2022-08-08 09:05-0300\n"
+"Last-Translator: Edilberto Fonseca <edilberto.fonseca@outlook.com>\n"
+"Language-Team: Edilberto Fonseca <edilberto.fonseca@outlook.com>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: globalPlugins/imc\n"
+"X-Poedit-SearchPath-2: buildVars.py\n"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#: buildVars.py:25
+msgid "Calculate your BMI"
+msgstr "Calcule seu IMC"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:28
+msgid "This addon calculates the body apple index."
+msgstr "Este addon calcula o índice de maça do corpo."
+
+#. Translators: Add-on title in the tools menu.
+#: globalPlugins/imc/__init__.py:19
+msgid "&Calculate your BMI"
+msgstr "&Calcule seu IMC"
+
+#: globalPlugins/imc/__init__.py:22
+#| msgid "This addon calculates the body apple index."
+msgid "BMI, This add-on calculates the body mass."
+msgstr "IMC, Este add-on calcula a massa corporal."
+
+#. Tradutors: Dialog title Body Apple Index Calculation.
+#: globalPlugins/imc/__init__.py:25
+msgid "Calculation of the Body Apple Index."
+msgstr "Cálculo do Índice de maça Corporal."
+
+#: globalPlugins/imc/__init__.py:41
+msgid "Enter your height: "
+msgstr "Digite sua altura: "
+
+#: globalPlugins/imc/__init__.py:44
+msgid "Enter your weight: "
+msgstr "Digite seu peso: "
+
+#: globalPlugins/imc/__init__.py:47
+msgid "&Calculate"
+msgstr "&Calcular"
+
+#: globalPlugins/imc/__init__.py:50
+msgid "C&lean"
+msgstr "&Limpar"
+
+#: globalPlugins/imc/__init__.py:53
+msgid "&Close"
+msgstr "&Fechar"
+
+#: globalPlugins/imc/__init__.py:73
+msgid "Fill in all fields!"
+msgstr "Preencha todos os campos!"
+
+#: globalPlugins/imc/__init__.py:73
+msgid "Atention"
+msgstr "Atenção"
+
+#: globalPlugins/imc/__init__.py:78
+msgid "Your BMI is {}, you are underweight!"
+msgstr "Seu IMC é de {}, você está abaixo do peso!"
+
+#: globalPlugins/imc/__init__.py:80
+msgid "Your BMI is {}, you are of normal weight!"
+msgstr "Seu IMC é de {}, você está com peso normal!"
+
+#: globalPlugins/imc/__init__.py:82
+msgid "Your BMI is {}, you are overweight!"
+msgstr "Seu IMC é de {}, você está acima do peso!"
+
+#: globalPlugins/imc/__init__.py:84
+msgid "Your BMI is {}, you are obese!"
+msgstr "Seu IMC é de {}, você é obeso!"
+
+#: globalPlugins/imc/__init__.py:86
+msgid "Your BMI is {}, you are severely obese!"
+msgstr "Seu IMC é de {}, você está gravemente obeso!"
+
+#: globalPlugins/imc/__init__.py:90
+msgid "Resut"
+msgstr "Resultado"
+
+#: globalPlugins/imc/__init__.py:90
+msgid "Message"
+msgstr "Mensagem"
+
+#~ msgid "Este add-on efetua o cálculo da maça corporal."
+#~ msgstr "This add-on calculates the body mass."
