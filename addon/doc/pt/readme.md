@@ -1,9 +1,10 @@
 # Cálculo do índice de maça corporal # 
 
 * Autor: Edilberto Fonseca <edilberto.fonseca@outlook.com>.
+* Agradecimentos: A Rui Fontes, pela colaboração e orientação durante o desenvolvimento do addon.
 * Data da criação: 11/08/2022.
 
-<hr>
+----------
 
 ## Como usar ##
 
@@ -35,5 +36,3 @@ Onde poderá verificar ou editar as informações  e efetuar novamente o cálcul
 ### Diálogo do resultado ###
 
 Nesta tela pressionando o enter será acionado o botão “Ok” por padrão. Para acionar o botão cancelar basta precionar o escape.
-
-<hr>

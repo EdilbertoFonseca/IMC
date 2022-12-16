@@ -2,6 +2,7 @@
 
 # Calculate your body mass with this add-on.
 #Author: Edilberto Fonseca.
+# Thanks: To Rui Fontes, for his collaboration and guidance during the development of the addon.
 # Creation date: 08/11/2022.
 
 import globalPluginHandler
@@ -41,11 +42,15 @@ class DialogIMC(wx.Dialog):
 		campoSizer = wx.BoxSizer(wx.HORIZONTAL)
 		buttonSizer = wx.BoxSizer(wx.HORIZONTAL)
 
-		labelHeight = wx.StaticText(panel, label=_('Enter your height: '))
+		labelHeight = wx.StaticText(panel, label=_('Enter your height in meters (example: 1.85): '))
 		self.textHeight = wx.TextCtrl(panel, -1)
+		self.textHeight.SetMaxLength(4)
+		self.textHeight.Bind(wx.EVT_TEXT_MAXLEN, self.onMaxLen)
 
-		labelWeight = wx.StaticText(panel, label=_('Enter your weight: '))
+		labelWeight = wx.StaticText(panel, label=_('Enter your weight in kilograms: '))
 		self.textWeight = wx.TextCtrl(panel, -1)
+		self.textWeight.SetMaxLength(3)
+		self.textWeight.Bind(wx.EVT_TEXT_MAXLEN,self.onMaxLen)
 
 		self.buttonCalc = wx.Button(panel, label=_('&Calculate'))
 		self.Bind(wx.EVT_BUTTON, self.onCalc, self.buttonCalc)
@@ -72,7 +77,7 @@ class DialogIMC(wx.Dialog):
 		try:
 			height = float(self.textHeight.GetValue())
 			weight = float(self.textWeight.GetValue())
-			calc = weight/(height**2)
+			calc = float(weight/(height**2))
 		except:
 			# Translators: Message displayed when fields are not filled.
 			wx.MessageBox(_('Fill in all fields!'), _('Atention'))
@@ -105,6 +110,9 @@ class DialogIMC(wx.Dialog):
 		self.textHeight.Clear()
 		self.textWeight.Clear()
 		self.textHeight.SetFocus()
+
+	def onMaxLen(self,event):
+		wx.MessageBox(_('Maximum length reached'), _('Atention'))
 
 	def onClose(self, event):
 		"""Close dialog."""

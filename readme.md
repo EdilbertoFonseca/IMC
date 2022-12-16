@@ -3,7 +3,7 @@
 * Author: Edilberto Fonseca <edilberto.fonseca@outlook.com>.
 * Creation date: 08/11/2022.
 
-<hr>
+----------
 
 ## How to use ##
 
@@ -36,4 +36,3 @@ Where you can check or edit the information and perform the calculation again.
 
 On this screen, pressing enter will activate the “Ok” button by default. To activate the cancel button, just press the escape button.
 
-<hr>
